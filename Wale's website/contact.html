@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contactus</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+    
+<body>
+    <div class="container">
+
+      <header>
+        <img src="images/logo.svg" alt="23andfour logo" class="logo">
+        <nav>
+            <a href="#" class="hide-desktop">
+                <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+            </a>
+
+            <ul class="show-desktop hide-mobile" id="nav">
+                <li id="exit" class="exit-btn hide-desktop">
+                    <img src="images/exit.svg" alt="exit menu">
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+
+<section>
+    <blockquote><p><i>Hey ! guys, you welcome to contact us page.
+        <br><br><i>contact us on gmail: brainwesco30@gmail.com</i></br>
+        <br><i>contact us at Facebook page: Brainsofts</i></br>
+    </i></p></blockquote>
+    <blockquote><p><i>Lorem ipsum dolor sit, amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, a. Ea, vel quaerat recusandae, non aut laudantium dolorum quia perspiciatis quisquam vitae, veniam minus iusto repudiandae. Ducimus labore, optio, eius facilis veritatis repellat culpa obcaecati iure impedit in eos harum cum similique delectus ex quam.consectetur adipisicing elit. Voluptate, nemo? Nam consectetur quasi nemo? Esse at provident impedit reiciendis, neque laudantium officiis et quo rerum, incidunt natus nihil non odit.</i></p></blockquote>
+</section>
+<br><br><br><br><br><br>
+
+
+
+
+<footer>
+    <div class="footer-container">
+        <div class="container">
+            <a href="#">
+                <img src="images/logo-white.svg" class="logo" alt="logo">
+            </a>
+            <p class="address">30 Madus Street, The Bells drive, Ota Ogun State<br>NGA</p>
+            <ul class="footer-links">
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+
+<script>
+    
+    var menu = document.getElementById('menu');
+    var nav = document.getElementById('nav');
+    var exit = document.getElementById('exit');
+
+    menu.addEventListener('click', function(e) {
+        nav.classList.toggle('hide-mobile');
+        e.preventDefault();
+    });
+
+    exit.addEventListener('click', function(e) {
+        nav.classList.add('hide-mobile');
+        e.preventDefault();
+    });
+
+</script>
+    
+</body>
+</html>
